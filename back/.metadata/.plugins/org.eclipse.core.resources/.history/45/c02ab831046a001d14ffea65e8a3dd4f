@@ -1,0 +1,42 @@
+package com.bowlcome.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.bowlcome.demo.Entity.UserEntity;
+import com.bowlcome.demo.Entity.UserEntity.Requests;
+import com.bowlcome.demo.repository.UserRepository;
+
+
+@Service
+public class UserServiceImpl implements UserService {
+	
+	private UserRepository userRepository;
+	
+	@Autowired
+	public UserServiceImpl(UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
+
+	@Override
+	public List<UserEntity> findAllUsers() {
+		return userRepository.findAll();
+	}
+
+	@Override
+	public UserEntity findUserId(String id) {
+		return userRepository.findByUserId(id);
+	}
+
+	@Override
+	public UserEntity signUpUser(Requests newUser) {
+		UserEntity user = UserEntity.Requests.toEntity(newUser);
+		return userRepository.save(user);
+	}
+
+
+
+}

@@ -1,0 +1,44 @@
+package com.bowlcome.demo.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.bowlcome.demo.Entity.UserEntity;
+import com.bowlcome.demo.Entity.UserEntity.Requests;
+import com.bowlcome.demo.repository.UserRepository;
+
+
+@Service
+public class UserServiceImpl  {
+	
+	private UserRepository userRepository;
+	
+	
+	
+//	@Override
+//	public List<UserEntity> findAllUsers() {
+//		return null;
+//	}
+//
+//	@Override
+//	public UserEntity findUserId(String id) {
+//		return null;
+//	}
+//
+//	@Override
+//	public UserEntity signUpUser(Requests newUser) {
+//		return null;
+//	}
+//
+//	@Override
+//	public UserEntity loginUser(Requests registeredUser) {
+//		return null;
+//	}
+//
+//	@Override
+//	public UserEntity findUserInfo(Requests user) {
+//		return null;
+//	}
+
+}

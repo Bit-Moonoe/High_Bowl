@@ -1,0 +1,40 @@
+package com.bowlcome.demo.service;
+
+import java.util.List;
+
+import com.bowlcome.demo.Entity.UserEntity;
+import com.bowlcome.demo.Entity.UserEntity.Requests;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public List<UserEntity> findAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserEntity findUserId(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserEntity signUpUser(Requests newUser) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserEntity loginUser(Requests registeredUser) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserEntity findUserInfo(Requests user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
